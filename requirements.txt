@@ -1,0 +1,9 @@
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+cryptography
+fastapi>=0.111.0
+uvicorn[standard]>=0.30.0
+cryptography
+redis
