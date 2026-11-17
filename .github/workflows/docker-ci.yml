@@ -62,7 +62,7 @@ jobs:
       - name: Skanowanie obrazu za pomocą Trivy
         uses: aquasecurity/trivy-action@master
         with:
-          image-ref: '${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:main'
+          image-ref: '${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.version }}'
           format: 'table'
           exit-code: '0'
           severity: 'CRITICAL,HIGH'
